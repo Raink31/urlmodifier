@@ -9,7 +9,7 @@ export default function Home() {
   
     const url = formData.get('url')?.toString();
 
-    const newUrl: string = url?.replace("/file/d/", "/uc?export=view&id=").replace("/view?usp=drive_link" || "/view?usp=sharing", "")!;
+    const newUrl: string = url?.replace("/file/d/", "/uc?export=view&id=").replace("/view?usp=drive_link", "").replace("/view?usp=sharing", "")!;
 
     setSpanData(newUrl)
   }
